@@ -99,7 +99,7 @@ const config: HardhatUserConfig = {
             accounts: [`0x${DEFAULT_PRIVATE_KEY}`]
         },
         arbitrum: {
-            url: `https://arb1.arbitrum.io/rpc`,
+            url: `https://rpc.ankr.com/arbitrum`,
             chainId: 42161,
             accounts: [`0x${DEFAULT_PRIVATE_KEY}`]
         },

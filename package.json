@@ -23,6 +23,7 @@
     "generate-merkle-root": "npx ts-node scripts/generate-merkle-root.ts -i ./scripts/distribution.json",
     "generate-merkle-root:example": "ts-node scripts/generate-merkle-root.ts --input scripts/example.json",
     "deploy": "npx hardhat run ./scripts/deployMerkleDistributor.js",
+    "deploy-to-staking": "npx hardhat run ./scripts/deployMerkleDistributorToStaking.js",
     "prepublishOnly": "yarn test",
     "pretest": "yarn compile",
     "test": "npx hardhat test"
@@ -34,6 +35,7 @@
     "@nomiclabs/hardhat-ethers": "^2.0.6",
     "@nomiclabs/hardhat-etherscan": "^3.1.2",
     "@nomiclabs/hardhat-waffle": "^2.0.3",
+    "@typechain/hardhat": "^8.0.0",
     "@types/chai": "^4.2.6",
     "@types/mocha": "^5.2.7",
     "axios": "^0.20.0",
