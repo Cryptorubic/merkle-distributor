@@ -7,7 +7,7 @@ async function main() {
         // Token Address
         '0x10aaed289a7b1b0155bf4b86c862f297e84465e0',
         // Merkle root
-        '0xff2231a6c3b89bf73495e8ca4d0b2d8a7f0ff9ba8152c0d5c7388e621b2cc42d',
+        '<MERKLE_ROOT>',
         '0x333ce751b413cA71725D7CDEf3cf50C8351E3333',
         '7776000'
     ];
