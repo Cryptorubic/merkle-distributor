@@ -27,6 +27,8 @@ fs.writeFileSync('scripts/<NAME>.qa.json', JSON.stringify(claims, null, 4));
 ```bash
 yarn generate-merkle-root
 ```
+
+### Regular Distributor deployment
 5) Change data in the [deployMerkleDistributor.js](scripts/deployMerkleDistributor.js) file
 
 ```ts
@@ -37,8 +39,26 @@ yarn generate-merkle-root
     '<MERKLE_ROOT>'
   )
 ```
+
 6) Deploy
 ```bash
 yarn deploy --network <NETWORK>
+```
+
+### To-Staking Distributor deployment
+5) Change data in the [deployMerkleDistributorToStaking.js](scripts/deployMerkleDistributorToStaking.js) file
+
+```ts
+  const merkleDistributor = await MerkleDistributor.deploy(
+    // Token Address
+    '<TOKEN_ADDRESS>',
+    // Merkle root
+    '<MERKLE_ROOT>'
+  )
+```
+
+6) Deploy
+```bash
+yarn deploy-to-staking --network <NETWORK>
 ```
 
